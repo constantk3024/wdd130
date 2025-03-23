@@ -1,0 +1,111 @@
+/* Basic CSS Structure */
+:root {
+    --primary-color: #1E90FF;
+    --secondary-color: #32CD32;
+    --accent1-color: #FFD700;
+    --accent2-color: #B22222;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 80%;
+}
+
+.client-img {
+    width: 130px;
+    float: right;
+    margin-right: 30px;
+}
+
+
+.history, .adventure {
+    margin-top: 40px;
+}
+
+.history h2, .adventure h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.adventure .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.adventure .images img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
