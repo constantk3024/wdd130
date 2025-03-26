@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid white; /* Optional: Add a divider under the header */
 }
 
 #logo {
@@ -33,6 +34,7 @@ nav a {
 
 main {
     margin: 20px;
+    padding: 20px;
 }
 
 .hero {
@@ -54,6 +56,7 @@ h1 {
     transform: translateX(-50%);
     font-size: 3rem;
     font-family: 'Roboto Slab', serif;
+    z-index: 1; /* Ensure text is above the image */
 }
 
 article {
@@ -72,26 +75,28 @@ article {
     margin-right: 30px;
 }
 
-
 .history, .adventure {
     margin-top: 40px;
+    padding: 20px;
 }
 
 .history h2, .adventure h2 {
     font-family: 'Roboto Slab', serif;
+    margin-bottom: 20px; /* Add some spacing under the section headers */
 }
 
 .adventure .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px; /* Increased gap for better spacing */
 }
 
 .adventure .images img {
     width: 30%;
     height: auto;
     border-radius: 8px;
+    object-fit: cover; /* Ensure images look good */
 }
 
 footer {
@@ -108,4 +113,10 @@ footer img {
 
 footer a {
     text-decoration: none;
+    color: white; /* Ensure footer links are readable */
+    padding: 5px 10px; /* Add space around links */
+}
+
+footer a:hover {
+    background-color: var(--accent1-color); /* Hover effect for social links */
 }
