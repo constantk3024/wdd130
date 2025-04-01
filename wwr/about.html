@@ -11,16 +11,20 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Rafting Adventures Logo" id="logo">
-        <nav>
-            <a href="pages/index.html">Home</a>
-            <a href="pages/about.html">About Us</a>
-            <a href="pages/trips.html">Trips</a>
-            <a href="pages/contact.html">Contact</a>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#trips">Trips</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-
+    
     <main>
         <div class="hero">
             <img src="images/hero-image.jpg" alt="Rafting adventure" class="hero-img">
@@ -33,29 +37,62 @@
             </article>
         </div>
 
-        <section class="history">
-            <h2>History</h2>
-            <p>Founded in 2005, we have been providing thrilling rafting experiences for over 15 years, creating lasting memories for adventurers of all levels.</p>
-        </section>
+        <div class="history-section">
+            <div class="history-comment left-comment">
+              <p>Founded in 2005, we have been providing thrilling rafting experiences for over 15 years, creating lasting memories for adventurers of all levels</p>
+            </div>
+          
+            <div class="history-image-container">
+              <h2 class="history-heading">History</h2>
+              <img src="images/history-image.jpg" alt="History Image">
+            </div>
 
-        <section class="adventure">
+            <div class="history-comment right-comment">
+              <p>Founded in 2005, we have been providing thrilling rafting experiences for over 15 years, creating lasting memories for adventurers of all levels</p>
+            </div>
+          </div>
+          
+          
+        
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <div class="images">
-                <img src="images/rafting1.jpg" alt="Rafting Image 1">
-                <img src="images/rafting2.jpg" alt="Rafting Image 2">
-                <img src="images/rafting3.jpg" alt="Rafting Image 3">
-                <img src="images/rafting4.jpg" alt="Rafting Image 4">
-                <img src="images/rafting5.jpg" alt="Rafting Image 5">
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting4.jpg" alt="River Rapids">
+                    <figcaption>River Rapids</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Wild River">
+                    <figcaption>Wild River</figcaption>
+                </figure>
             </div>
         </section>
+        
+        
     </main>
 
     <footer>
         <p>&copy; 2025 | WHITE WATER RAFTING | Designed by Tijani Rasaq</p>
-        <a href="https://facebook.com"><img src="images/facebook-icon.jpg" alt="Facebook"></a>
-        <a href="https://twitter.com"><img src="images/twitter-icon.webp" alt="Twitter"></a>
-        <a href="https://instagram.com"><img src="images/instagram-icon.jpg" alt="Instagram"></a>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.jpg" alt="Instagram"></a>
+        </div>
     </footer>
+    
 </body>
 </html>
+
 
