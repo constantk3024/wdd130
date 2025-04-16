@@ -8,7 +8,7 @@
     <title>Contact Us - WHITE WATER RAFTING</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header class="header">
@@ -43,23 +43,29 @@
         <!-- Embedded Google Map -->
         <section class="google-map">
             <h2>Find Us on the Map</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12771.563197324228!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDBMNDcw!5e0!3m2!1sen!2sus!4v1570239843671!5m2!1sen!2sus" width="500" height="350" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12771.563197324228!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDBMNDcw!5e0!3m2!1sen!2sus!4v1570239843671!5m2!1sen!2sus" width="500" height="350" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
 
-        <!-- Employee Profiles -->
+       <!-- Employee-profile-->
         <section class="employee-profiles">
             <h2>Meet Our Team</h2>
             <div class="employee-profile">
-                <img src="images/employee1.jpeg" alt="Employee 1">
-                <figcaption>John Doe - Customer Service Manager</figcaption>
+                <figure>
+                    <img src="images/employee1.jpeg" alt="Employee 1">
+                    <figcaption>Jane Doe - Customer Service Manager</figcaption>
+                </figure>
             </div>
             <div class="employee-profile">
-                <img src="images/employee2.jpeg" alt="Employee 2">
-                <figcaption>Jane Smith - Rafting Instructor</figcaption>
+                <figure>
+                    <img src="images/employee2.jpeg" alt="Employee 2">
+                    <figcaption>John Smith - Rafting Instructor</figcaption>
+                </figure>
             </div>
             <div class="employee-profile">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <figcaption>David Lee - Operations Manager</figcaption>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <figcaption>Sarah Lee - Operations Manager</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -73,10 +79,18 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="purpose">Purpose of Your Message:</label>
-                <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="Reservation Question" required> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="Website Suggestion" required> Website Suggestion</label>
+                <fieldset>
+                    <legend>Purpose of Your Message:</legend>
+                    <label for="general-inquiry">
+                        <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required> General Inquiry
+                    </label>
+                    <label for="reservation-question">
+                        <input type="radio" id="reservation-question" name="purpose" value="Reservation Question" required> Reservation Question
+                    </label>
+                    <label for="website-suggestion">
+                        <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion" required> Website Suggestion
+                    </label>
+                </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
@@ -97,9 +111,7 @@
         </div>
         <p><a href="contact-wireframe.jpg" target="_blank">View Contact Us Page Wireframe</a></p>
     </footer>
-    
+
+    <script async data-id="five-server" data-file="c:\Home Work\wdd130\wwr\contact.html" src="/fiveserver.js"></script>
 </body>
 </html>
-
-
-
